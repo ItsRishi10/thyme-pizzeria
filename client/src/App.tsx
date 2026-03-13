@@ -19,9 +19,10 @@ function Router() {
 }
 
 // NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
+// - Warm Artisanal Minimalism design with light background
+// - Soft cream (#f5f1ed) background with burnt orange (#c85a17) accents
+// - Playfair Display serif for headings, Inter sans-serif for body
+// - Slow, intentional animations (400-600ms) for handcrafted feel
 
 function App() {
   return (
