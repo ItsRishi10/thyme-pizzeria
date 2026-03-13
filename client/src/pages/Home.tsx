@@ -8,6 +8,8 @@ import Gallery from "@/components/Gallery";
 import VisitUs from "@/components/VisitUs";
 import OrderOnline from "@/components/OrderOnline";
 import Footer from "@/components/Footer";
+import SchemaMarkup from "@/components/SchemaMarkup";
+import FloatingOrderButton from "@/components/FloatingOrderButton";
 
 /**
  * Thyme Woodfired Pizzeria - Home Page
@@ -22,6 +24,8 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
+      <SchemaMarkup />
+      <FloatingOrderButton />
       <Navigation />
       <main>
         <Hero />
