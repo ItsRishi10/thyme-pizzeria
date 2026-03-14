@@ -163,6 +163,7 @@ export default defineConfig({
   },
   envDir: path.resolve(import.meta.dirname),
   root: path.resolve(import.meta.dirname, "client"),
+  base: "/thyme-pizzeria/",
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
