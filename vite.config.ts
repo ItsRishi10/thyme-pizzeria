@@ -153,7 +153,8 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
-  plugins,
+  plugins: [react()],
+  base: "/thyme-pizzeria/",
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
