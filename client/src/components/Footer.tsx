@@ -1,4 +1,4 @@
-import { Instagram, MapPin, Phone, Mail } from 'lucide-react';
+import { Instagram, MapPin, Phone, Mail, Facebook } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,10 +11,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="text-2xl font-bold text-primary" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Thyme
-              </div>
-              <div className="text-xs font-semibold text-background/70 uppercase tracking-widest">
-                Pizzeria
+                Thyme Woodfired Pizzeria
               </div>
             </div>
             <p className="text-background/70 text-sm leading-relaxed">
@@ -27,13 +24,13 @@ export default function Footer() {
             <h4 className="font-bold text-background mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-background/70">
               <li>
-                <a href="#menu" className="hover:text-primary transition-colors">
-                  Menu
+                <a href="#about" className="hover:text-primary transition-colors">
+                  About
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-primary transition-colors">
-                  About
+                <a href="#menu" className="hover:text-primary transition-colors">
+                  Menu
                 </a>
               </li>
               <li>
@@ -55,7 +52,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-background/70">
               <li className="flex gap-2 items-start">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-                <span>AECS Layout, Whitefield<br />Bangalore, India</span>
+                <span>AECS Layout, Kundalahalli<br />Bangalore, India</span>
               </li>
               <li className="flex gap-2 items-center">
                 <Phone className="w-4 h-4 flex-shrink-0 text-primary" />
@@ -75,21 +72,31 @@ export default function Footer() {
           {/* Social & Hours */}
           <div>
             <h4 className="font-bold text-background mb-4">Follow Us</h4>
-            <div className="flex gap-4 mb-6">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-primary/20 rounded-lg hover:bg-primary hover:text-background transition-all duration-300"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
+            <section className="mb-6 grid md:grid-cols-5">
+              <div className="flex gap-4 mb-6">
+                <a
+                  href="https://www.instagram.com/thyme.pizzeria/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-primary/20 rounded-lg hover:bg-primary hover:text-background transition-all duration-300"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              </div>
+              <div className="flex gap-4 mb-6">
+                <a
+                  href="https://www.facebook.com/thymepizzeria.blr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-primary/20 rounded-lg hover:bg-primary hover:text-background transition-all duration-300"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+              </div>
+            </section>
             <h4 className="font-bold text-background mb-2 text-sm">Hours</h4>
             <p className="text-xs text-background/70 leading-relaxed">
-              Mon-Thu: 11 AM - 10 PM<br />
-              Fri-Sat: 11 AM - 11 PM<br />
-              Sun: 12 PM - 10 PM
+              All Week: 12:00 PM - 11:00 PM
             </p>
           </div>
         </div>

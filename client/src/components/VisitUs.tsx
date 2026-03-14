@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { MapPin, Clock, Phone } from 'lucide-react';
+import { MapView } from "@/components/Map";
 
 export default function VisitUs() {
   const containerVariants = {
@@ -35,7 +36,7 @@ export default function VisitUs() {
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="section-title text-primary mb-4">Visit Us</h2>
             <p className="section-subtitle mx-auto">
-              Located in the heart of Whitefield, a hidden gem for pizza lovers
+              Located in the heart of Kundalahalli, a hidden gem for pizza lovers
             </p>
           </motion.div>
 
@@ -53,11 +54,11 @@ export default function VisitUs() {
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Address</h3>
                   <p className="text-muted-foreground">
-                    AECS Layout, Whitefield<br />
+                    AECS Layout, Kundalahalli<br />
                     Bangalore, India
                   </p>
                   <p className="text-sm text-primary font-semibold mt-2">
-                    Nearby: Marathahalli, Kundanahalli
+                    Nearby: Marathahalli, Whitefield
                   </p>
                 </div>
               </div>
@@ -72,9 +73,7 @@ export default function VisitUs() {
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Opening Hours</h3>
                   <p className="text-muted-foreground">
-                    Monday - Thursday: 11:00 AM - 10:00 PM<br />
-                    Friday - Saturday: 11:00 AM - 11:00 PM<br />
-                    Sunday: 12:00 PM - 10:00 PM
+                    All Week: 12:00 PM - 11:00 PM
                   </p>
                 </div>
               </div>
@@ -102,7 +101,7 @@ export default function VisitUs() {
               {/* CTA Button */}
               <motion.div variants={itemVariants} className="pt-4">
                 <a
-                  href="https://maps.google.com/?q=AECS+Layout+Whitefield+Bangalore"
+                  href="https://www.google.com/maps/place/Thyme+Woodfired+Pizzeria/@12.9626017,77.7131766,20z/data=!4m15!1m8!3m7!1s0x3bae122522e01d5d:0x1c03cb5b886ac7ec!2sAECS+Layout,+Marathahalli,+Bengaluru,+Karnataka+560037!3b1!8m2!3d12.9629354!4d77.7122996!16s%2Fg%2F1vb9bhlj!3m5!1s0x3bae130042b0ab61:0x96198778dfb67fd2!8m2!3d12.9626817!4d77.713296!16s%2Fg%2F11w2dl58c_?entry=ttu&g_ep=EgoyMDI2MDMxMC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary inline-block"
@@ -113,16 +112,8 @@ export default function VisitUs() {
             </motion.div>
 
             {/* Right: Map */}
-            <motion.div variants={itemVariants} className="overflow-hidden rounded-lg h-96 md:h-full min-h-96">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8176223169945!2d77.7415!3d12.9698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13b0b0b0b0b1%3A0xb0b0b0b0b0b0b0b0!2sAECS%20Layout%2C%20Whitefield%2C%20Bangalore!5e0!3m2!1sen!2sin!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <motion.div variants={itemVariants} className="overflow-hidden rounded-lg">
+              <MapView />
             </motion.div>
           </div>
         </motion.div>

@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { ShoppingCart, Phone } from 'lucide-react';
 
+const phone = '+91 98765 43210';
+
 export default function OrderOnline() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -54,7 +56,7 @@ export default function OrderOnline() {
                 Order now on Swiggy for fast delivery
               </p>
               <a
-                href="https://www.swiggy.com"
+                href="https://www.swiggy.com/city/bangalore/thyme-woodfired-pizzeria-s-brookefield-rest925473"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-block"
@@ -76,7 +78,7 @@ export default function OrderOnline() {
                 Browse our menu and order on Zomato
               </p>
               <a
-                href="https://www.zomato.com"
+                href="https://www.zomato.com/bangalore/thyme-wood-fired-pizzeria-brookefield-bangalore"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-block"
@@ -98,7 +100,7 @@ export default function OrderOnline() {
                 Call us directly for pickup orders
               </p>
               <a
-                href="tel:+919876543210"
+                href={`tel:${phone}`}
                 className="btn-primary inline-block"
               >
                 Call Now
@@ -115,7 +117,7 @@ export default function OrderOnline() {
               Most of our sales happen through delivery apps. Download Swiggy or Zomato to order now!
             </p>
             <p className="text-sm text-primary font-semibold">
-              Delivery available to Whitefield, Marathahalli, and nearby areas
+              Delivery available to Kundalahalli, Marathahalli, and nearby areas
             </p>
           </motion.div>
         </motion.div>

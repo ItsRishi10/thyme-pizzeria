@@ -54,13 +54,13 @@ export default function Hero() {
           </button>
           <button
             onClick={() => scrollToSection('order')}
-            className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-all duration-500 text-lg"
+            className="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/50 transition-all duration-500 text-lg"
           >
             Order Online
           </button>
           <button
             onClick={() => scrollToSection('visit')}
-            className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-all duration-500 text-lg"
+            className="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/50 transition-all duration-500 text-lg"
           >
             Find Us
           </button>
@@ -70,7 +70,7 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom--10 left-1/2 transform -translate-x-1/2"
         >
           <div className="text-white text-center">
             <p className="text-sm mb-2">Scroll to explore</p>

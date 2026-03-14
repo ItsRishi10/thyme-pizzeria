@@ -31,10 +31,7 @@ export default function Navigation() {
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
           <div className="text-2xl font-bold text-primary" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Thyme
-          </div>
-          <div className="text-xs font-semibold text-muted-foreground uppercase tracking-widest">
-            Pizzeria
+            Thyme Woodfired Pizzeria
           </div>
         </div>
 
@@ -42,25 +39,25 @@ export default function Navigation() {
         <div className="hidden md:flex items-center gap-8">
           <button
             onClick={() => scrollToSection('about')}
-            className="text-foreground font-medium hover:text-primary transition-colors duration-300"
+            className="text-primary font-medium hover:text-primary transition-colors duration-300"
           >
             About
           </button>
           <button
             onClick={() => scrollToSection('menu')}
-            className="text-foreground font-medium hover:text-primary transition-colors duration-300"
+            className="text-primary font-medium hover:text-primary transition-colors duration-300"
           >
             Menu
           </button>
           <button
             onClick={() => scrollToSection('gallery')}
-            className="text-foreground font-medium hover:text-primary transition-colors duration-300"
+            className="text-primary font-medium hover:text-primary transition-colors duration-300"
           >
             Gallery
           </button>
           <button
             onClick={() => scrollToSection('visit')}
-            className="text-foreground font-medium hover:text-primary transition-colors duration-300"
+            className="text-primary font-medium hover:text-primary transition-colors duration-300"
           >
             Visit Us
           </button>

@@ -34,7 +34,7 @@ export default function About() {
           <motion.div variants={itemVariants} className="mb-16">
             <h2 className="section-title text-primary mb-4">Our Story</h2>
             <p className="section-subtitle">
-              Thyme Woodfired Pizzeria is a cozy neighborhood pizzeria in AECS Layout, Whitefield, specializing in handcrafted sourdough pizzas baked in a traditional wood-fired oven.
+              Thyme Woodfired Pizzeria is a cozy neighborhood pizzeria in AECS Layout, Kundalahalli, specializing in handcrafted sourdough pizzas baked in a traditional wood-fired oven.
             </p>
           </motion.div>
 
