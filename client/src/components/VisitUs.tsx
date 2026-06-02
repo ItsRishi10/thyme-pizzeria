@@ -89,7 +89,7 @@ export default function VisitUs() {
                   <h3 className="text-xl font-bold text-foreground mb-2">Contact</h3>
                   <p className="text-muted-foreground">
                     <a href="tel:+919876543210" className="hover:text-primary transition-colors">
-                      +91 98765 43210
+                      +91 98868 18658
                     </a>
                   </p>
                   <p className="text-sm text-muted-foreground mt-1">

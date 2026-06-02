@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ShoppingCart, Phone } from 'lucide-react';
 
-const phone = '+91 98765 43210';
+const phone = '+91 98868 18658';
 
 export default function OrderOnline() {
   const containerVariants = {
